@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+body {
+    background-image: url('/bg.jpg');
+  }
+
+  /* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust the bounce distance */
+  }
+}
+
+/* Target the placeholder and add the bounce effect */
+input::placeholder {
+  animation: bounce 1s infinite; /* Adjust the duration and timing as needed */
+}
+
+
+.owner{
+  text-shadow: 5px 5px 3px black;
+}
